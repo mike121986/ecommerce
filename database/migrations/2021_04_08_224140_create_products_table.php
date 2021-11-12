@@ -33,6 +33,11 @@ class CreateProductsTable extends Migration
 
             $table->integer('quantity')->nullable();
 
+            $table->text('modelo')->nullable();
+            $table->text('sku')->nullable();
+            $table->text('codigoSat')->nullable();
+            $table->text('codigo')->nullable();
+
             $table->enum('status', [Product::BORRADOR, Product::PUBLICADO])->default(Product::BORRADOR);
 
             $table->timestamps();

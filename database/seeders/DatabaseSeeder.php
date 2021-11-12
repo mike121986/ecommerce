@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\District;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Storage;
 
@@ -14,13 +15,13 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        Storage::deleteDirectory('categories');
-        Storage::deleteDirectory('subcategories');
-        Storage::deleteDirectory('products');
+        Storage::deleteDirectory('/public/categories');
+        Storage::deleteDirectory('/public/subcategories');
+        Storage::deleteDirectory('/public/products');
 
-        Storage::makeDirectory('categories');
-        Storage::makeDirectory('subcategories');
-        Storage::makeDirectory('products');
+        Storage::makeDirectory('/public/categories');
+        Storage::makeDirectory('/public/subcategories');
+        Storage::makeDirectory('/public/products');
 
         $this->call(UserSeeder::class);
         $this->call(CategorySeeder::class);
@@ -36,5 +37,7 @@ class DatabaseSeeder extends Seeder
         $this->call(ColorSizeSeeder::class);
 
         $this->call(DepartmentSeeder::class);
+        $this->call(CitySeeder::class);
+        $this->call(DistrictSeeder::class);
     }
 }

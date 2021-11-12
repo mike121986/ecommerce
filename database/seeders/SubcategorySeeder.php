@@ -17,128 +17,163 @@ class SubcategorySeeder extends Seeder
     public function run()
     {
         $subcategories = [
-            /* Celulares y tablets */
+            /* Herramienta */
             [
                 'category_id' => 1,
-                'name' => 'Celulares y smartphones',
-                'slug' => Str::slug('Celulares y smartphones'),
-                'color' => true
-            ],
-
-            [
-                'category_id' => 1,
-                'name' => 'Accesorios para celulares',
-                'slug' => Str::slug('Accesorios para celulares'),
+                'name' => 'Marcadores',
+                'slug' => Str::slug('Marcadores')
             ],
 
             [
                 'category_id' => 1,
-                'name' => 'Smartwatches',
-                'slug' => Str::slug('Smartwatches'),
+                'name' => 'Niveles',
+                'slug' => Str::slug('Niveles'),
             ],
 
-            /* TV, audio y video */
+            [
+                'category_id' => 1,
+                'name' => 'Para atornillar',
+                'slug' => Str::slug('para atornillar'),
+            ],
+
+            [
+                'category_id' => 1,
+                'name' => 'Sierras',
+                'slug' => Str::slug('Sierras'),
+            ],/* 4 */
+
+            /* Herramienta electrica */
 
             [
                 'category_id' => 2,
-                'name' => 'TV y audio',
-                'slug' => Str::slug('TV y audio'),
+                'name' => 'Aspiradoras',
+                'slug' => Str::slug('aspiradoras'),
             ],
             [
                 'category_id' => 2,
-                'name' => 'Audios',
-                'slug' => Str::slug('Audios'),
+                'name' => 'Atornilladores',
+                'slug' => Str::slug('Atornilladores'),
             ],
 
             [
                 'category_id' => 2,
-                'name' => 'Audio para autos',
-                'slug' => Str::slug('Audio para autos'),
+                'name' => 'Baterias',
+                'slug' => Str::slug('Baterias'),
             ],
+            [
+                'category_id' => 2,
+                'name' => 'Cortadoras',
+                'slug' => Str::slug('Cortadoras'),
+            ],
+            [
+                'category_id' => 2,
+                'name' => 'Electricidad',
+                'slug' => Str::slug('Electricidad'),
+            ],
+            [
+                'category_id' => 2,
+                'name' => 'Esmeriladoras',
+                'slug' => Str::slug('Esmeriladoras'),
+            ],/* 10 */
+            [
+                'category_id' => 2,
+                'name' => 'Kits',
+                'slug' => Str::slug('Kits'),
+            ],
+            [
+                'category_id' => 2,
+                'name' => 'Lijadoras',
+                'slug' => Str::slug('Lijadoras'),
+            ],
+            [
+                'category_id' => 2,
+                'name' => 'Llaves Impacto',
+                'slug' => Str::slug('Llaves Impacto'),
+            ],/* 13 */
+            [
+                'category_id' => 2,
+                'name' => 'Miniesmeriladoras',
+                'slug' => Str::slug('Miniesmeriladoras'),
+            ],
+            [
+                'category_id' => 2,
+                'name' => 'Multiherramientas',
+                'slug' => Str::slug('Multiherramientas'),
+            ],/* 15 */
+            [
+                'category_id' => 2,
+                'name' => 'Pistolas',
+                'slug' => Str::slug('Pistolas'),
+            ],/* 16 */
+            [
+                'category_id' => 2,
+                'name' => 'Pistolas de calor',
+                'slug' => Str::slug('Pistolas de calor'),
+            ],/* 17 */
+            [
+                'category_id' => 2,
+                'name' => 'Pulidoras',
+                'slug' => Str::slug('Pulidoras'),
+            ],/* 18 */
+            [
+                'category_id' => 2,
+                'name' => 'Rectificadores',
+                'slug' => Str::slug('Rectificadores'),
+            ],/* 19 */
+            [
+                'category_id' => 2,
+                'name' => 'Rotomartillos',
+                'slug' => Str::slug('Rotomartillos'),
+            ],/* 20 */
+            [
+                'category_id' => 2,
+                'name' => 'Routers',
+                'slug' => Str::slug('Routers'),
+            ],/* 21 */
+            [
+                'category_id' => 2,
+                'name' => 'Sierras',
+                'slug' => Str::slug('Sierras'),
+            ],/* 22 */
+            [
+                'category_id' => 2,
+                'name' => 'Sopladoras',
+                'slug' => Str::slug('Sopladoras'),
+            ],/* 23 */
+            [
+                'category_id' => 2,
+                'name' => 'Taladros',
+                'slug' => Str::slug('Taladros'),
+            ],/* 24 */
+            [
+                'category_id' => 2,
+                'name' => 'Temperatura',
+                'slug' => Str::slug('Temperatura'),
+            ],/* 25 */
 
-            /* Consola y videojuegos */
+            /* Iluminacion */
             [
                 'category_id' => 3,
-                'name' => 'Xbox',
-                'slug' => Str::slug('xbos'),
+                'name' => 'Linternas',
+                'slug' => Str::slug('Linternas'),
             ],
 
-            [
-                'category_id' => 3,
-                'name' => 'Play Station',
-                'slug' => Str::slug('Play Station'),
-            ],
-
-            [
-                'category_id' => 3,
-                'name' => 'Videojuegos para PC',
-                'slug' => Str::slug('Videojuegos para PC'),
-            ],
-
-            [
-                'category_id' => 3,
-                'name' => 'Nintendo',
-                'slug' => Str::slug('Nintendo'),
-            ],
-
-            /* Computación */
+            /* Organizadores */
 
             [
                 'category_id' => 4,
-                'name' => 'Portátiles',
-                'slug' => Str::slug('Portátiles'),
+                'name' => 'Cartucheras',
+                'slug' => Str::slug('Cartucheras'),
             ],
 
             [
                 'category_id' => 4,
-                'name' => 'PC escritorio',
-                'slug' => Str::slug('PC escritorio'),
-            ],
-
-            [
-                'category_id' => 4,
-                'name' => 'Almacenamiento',
-                'slug' => Str::slug('Almacenamiento'),
-            ],
-
-            [
-                'category_id' => 4,
-                'name' => 'Accesorios computadoras',
-                'slug' => Str::slug('Accesorios computadoras'),
-            ],
-
-            /* Moda */
-            [
-                'category_id' => 5,
-                'name' => 'Mujeres',
-                'slug' => Str::slug('Mujeres'),
-                'color' => true,
-                'size' => true
-            ],
-
-            [
-                'category_id' => 5,
-                'name' => 'Hombres',
-                'slug' => Str::slug('Hombres'),
-                'color' => true,
-                'size' => true
-            ],
-
-            [
-                'category_id' => 5,
-                'name' => 'Lentes',
-                'slug' => Str::slug('Lentes'),
-            ],
-
-            [
-                'category_id' => 5,
-                'name' => 'Relojes',
-                'slug' => Str::slug('Relojes'),
+                'name' => 'Organizadores',
+                'slug' => Str::slug('Organizadores'),
             ],
         ];
 
-        foreach ($subcategories as $subcategory) {
-            
+        foreach ($subcategories as $subcategory) {            
 
             Subcategory::create($subcategory);
 

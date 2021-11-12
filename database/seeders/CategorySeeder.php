@@ -17,45 +17,49 @@ class CategorySeeder extends Seeder
     public function run()
     {
         $categories = [
+            
             [
-                'name' => 'Celulares y tablets',
-                'slug' => Str::slug('Celulares y tablets'),
-                'icon' => '<i class="fas fa-mobile-alt"></i>'
-            ],
-            [
-                'name' => 'TV, audio y video',
-                'slug' => Str::slug('TV, audio y video'),
-                'icon' => '<i class="fas fa-tv"></i>'
+                'name' => 'Herramienta',
+                'slug' => Str::slug('Herramienta'),
+                'icon' => '<i class="fas fa-tools"></i>',
+                'image' =>  'https://drive.google.com/file/d/1CjRUCOaPW-zBWJJIWaKVzibX6hcdAeOS/view?usp=sharing'
             ],
 
             [
-                'name' => 'Consola y videojuegos',
-                'slug' => Str::slug('Consola y videojuegos'),
-                'icon' => '<i class="fas fa-gamepad"></i>'
+                'name' => 'Herramienta electrica',
+                'slug' => Str::slug('Herramienta electrica'),
+                'icon' => '<i class="fas fa-charging-station"></i>',
+                'image' =>  'https://drive.google.com/file/d/1CjRUCOaPW-zBWJJIWaKVzibX6hcdAeOS/view?usp=sharing'
             ],
+           
 
             [
-                'name' => 'Computación',
-                'slug' => Str::slug('Computación'),
-                'icon' => '<i class="fas fa-laptop"></i>'
+                'name' => 'Iluminacion',
+                'slug' => Str::slug('Iluminacion'),
+                'icon' => '<i class="far fa-lightbulb"></i>',
+                'image' =>  'https://drive.google.com/file/d/1CjRUCOaPW-zBWJJIWaKVzibX6hcdAeOS/view?usp=sharing'
+            ],
+            
+            [
+                'name' => 'Organizadores',
+                'slug' => Str::slug('Organizadores'),
+                'icon' => '<i class="fas fa-columns"></i>',
+                'image' =>  'https://drive.google.com/file/d/1CjRUCOaPW-zBWJJIWaKVzibX6hcdAeOS/view?usp=sharing'
             ],
 
-            [
-                'name' => 'Moda',
-                'slug' => Str::slug('Moda'),
-                'icon' => '<i class="fas fa-tshirt"></i>'
-            ],
         ];
 
         foreach ($categories as $category) {
-            $category = Category::factory(1)->create($category)->first();
-
-            $brands = Brand::factory(4)->create();
-
-            foreach ($brands as $brand) {
-                $brand->categories()->attach($category->id);
-            }
+           /*  $category = Category::factory(1)->create($category)->first(); */
+           Category::create($category);
+            
         }
+        Brand::factory(1)->create();
+
+      /*   foreach ($brands as $brand) {
+            $brand->categories()->attach($category->id);
+              Subcategory::create($subcategory);
+        } */
 
     }
 }

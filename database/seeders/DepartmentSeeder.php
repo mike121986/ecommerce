@@ -16,7 +16,19 @@ class DepartmentSeeder extends Seeder
      */
     public function run()
     {
-        Department::factory(8)->create()->each(function(Department $department){
+        $estados = [
+            [
+                'name' => 'Ciudad De México'
+            ],
+            [
+                'name' => 'Estado De México'
+            ],
+        ];
+
+        foreach ($estados as $estado) {
+            Department::create($estado);
+        }
+       /*  Department::factory(8)->create()->each(function(Department $department){
             City::factory(8)->create([
                 'department_id' => $department->id
             ])->each(function(City $city){
@@ -24,6 +36,6 @@ class DepartmentSeeder extends Seeder
                     'city_id' => $city->id
                 ]);
             });
-        });
+        }); */
     }
 }

@@ -19,7 +19,6 @@ class CreateCitiesTable extends Migration
             $table->string('name');
 
             $table->float('cost');
-
             $table->unsignedBigInteger('department_id');
             $table->foreign('department_id')->references('id')->on('departments')->onDelete('cascade');
 

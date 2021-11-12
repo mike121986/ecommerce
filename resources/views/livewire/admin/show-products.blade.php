@@ -2,7 +2,7 @@
 
     <x-slot name="header">
         <div class="flex items-center">
-            <h2 class="font-semibold text-xl text-gray-600 leading-tight">
+            <h2 class="font-semibold text-xl text-gray-600 leading-tight mt-5">
                 Lista de productos
             </h2>
 
@@ -103,7 +103,7 @@
 
                                 </td>
                                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                    {{$product->price}} USD
+                                    {{$product->price}} MXN
                                 </td>
                                 <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                                     <a href="{{ route('admin.products.edit', $product) }}" class="text-indigo-600 hover:text-indigo-900">Edit</a>

@@ -16,7 +16,7 @@ class CreateProduct extends Component
 
     public $categories, $subcategories = [], $brands = [];
     public $category_id = "", $subcategory_id = "", $brand_id = "";
-    public $name, $slug, $description, $price, $quantity;
+    public $name, $slug, $description, $price, $quantity, $codigo, $codigosat, $sku, $model;
 
 
     protected $rules = [
@@ -27,6 +27,10 @@ class CreateProduct extends Component
         'description' => 'required',
         'brand_id' => 'required',
         'price' => 'required',
+        'codigo' => 'required',
+        /* 'codigosat' => 'required', */
+        'sku' => 'required',
+        'model' => 'required',
     ];
 
     public function updatedCategoryId($value){
@@ -63,7 +67,7 @@ class CreateProduct extends Component
                 $rules['quantity'] = 'required';
             }
         }
-
+        /* se ejecutan las validaciones */
         $this->validate($rules);
 
         $product = new Product();
@@ -74,6 +78,10 @@ class CreateProduct extends Component
         $product->price = $this->price;
         $product->subcategory_id = $this->subcategory_id;
         $product->brand_id = $this->brand_id;
+        $product->codigo = $this->codigo;
+        /* $product->codigosat = $this->codigosat; */
+        $product->sku = $this->sku;
+        $product->modelo = $this->model;
         if ($this->subcategory_id) {
             if (!$this->subcategory->color && !$this->subcategory->size) {
                 $product->quantity = $this->quantity;
