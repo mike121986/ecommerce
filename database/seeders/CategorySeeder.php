@@ -22,14 +22,14 @@ class CategorySeeder extends Seeder
                 'name' => 'Herramienta',
                 'slug' => Str::slug('Herramienta'),
                 'icon' => '<i class="fas fa-tools"></i>',
-                'image' =>  'https://drive.google.com/file/d/1CjRUCOaPW-zBWJJIWaKVzibX6hcdAeOS/view?usp=sharing'
+                'image' =>  'subcategories\herramienta.jpg'
             ],
 
             [
                 'name' => 'Herramienta electrica',
                 'slug' => Str::slug('Herramienta electrica'),
                 'icon' => '<i class="fas fa-charging-station"></i>',
-                'image' =>  'https://drive.google.com/file/d/1CjRUCOaPW-zBWJJIWaKVzibX6hcdAeOS/view?usp=sharing'
+                'image' =>  'subcategories\herramienta-electrica.jpg'
             ],
            
 
@@ -37,14 +37,14 @@ class CategorySeeder extends Seeder
                 'name' => 'Iluminacion',
                 'slug' => Str::slug('Iluminacion'),
                 'icon' => '<i class="far fa-lightbulb"></i>',
-                'image' =>  'https://drive.google.com/file/d/1CjRUCOaPW-zBWJJIWaKVzibX6hcdAeOS/view?usp=sharing'
+                'image' =>  'subcategories\iluminacion.jpg'
             ],
             
             [
                 'name' => 'Organizadores',
                 'slug' => Str::slug('Organizadores'),
                 'icon' => '<i class="fas fa-columns"></i>',
-                'image' =>  'https://drive.google.com/file/d/1CjRUCOaPW-zBWJJIWaKVzibX6hcdAeOS/view?usp=sharing'
+                'image' =>  'subcategories\organizadores.jpg'
             ],
 
         ];

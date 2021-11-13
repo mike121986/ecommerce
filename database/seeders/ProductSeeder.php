@@ -16,12 +16,7 @@ class ProductSeeder extends Seeder
      */
     public function run()
     {
-        /* Product::factory(250)->create()->each(function(Product $product){
-            Image::factory(4)->create([
-                'imageable_id' => $product->id,
-                'imageable_type' => Product::class
-            ]);
-        }); */
+        
 
         $producto = [
             ['name'=>'ROTOMARTILLO SDS PLUS 960W 1,620RPM 0-5,860IPM','slug'=>'ROTOMARTILLO-SDS-PLUS-960W-1620RPM-0-5860IPM','description'=>'ROTOMARTILLO SDS PLUS 960W 1,620RPM 0-5,860IPM','price'=>'4683.906','subcategory_id'=>'20','brand_id'=>'1','quantity'=>'10','modelo'=>'5262-21','sku'=>'5262-21','codigoSat'=>'20111603','codigo'=>'232-MHE-RMA06','status'=>2],
@@ -77,5 +72,12 @@ class ProductSeeder extends Seeder
         foreach ( $producto as $productos) {
            Product::create($productos);
         }
+
+        /* Product::factory(250)->create()->each(function(Product $product){
+            Image::factory(4)->create([
+                'imageable_id' => $product->id,
+                'imageable_type' => Product::class
+            ]);
+        }); */
     }
 }
