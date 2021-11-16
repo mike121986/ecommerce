@@ -86,6 +86,42 @@
                 </div>
             </div>
 
+            <div class="grid grid-cols-2 gap-6 mb-4">
+                {{-- Codigo --}}
+                <div class="mb-4">
+                    <x-jet-label value="Codigo" />
+                    <x-jet-input type="text" class="w-full" wire:model="product.codigo"
+                        placeholder="Ingrese el código del producto" />
+                    <x-jet-input-error for="product.codigo" />
+                </div>
+                {{-- CodigoSat --}}
+               {{--  <div class="mb-4">
+                    <x-jet-label value="Codigo Sat" />
+                    <x-jet-input type="text" class="w-full" wire:model="codigosat"
+                        placeholder="Ingrese el código SAT del producto" />
+                    <x-jet-input-error for="codigosat" />
+                </div> --}}
+                
+            </div>
+
+            <div class="grid grid-cols-2 gap-6 mb-4">
+                {{-- SKU --}}
+                <div class="mb-4">
+                    <x-jet-label value="SKU" />
+                    <x-jet-input type="text" class="w-full" wire:model="product.sku"
+                        placeholder="Ingrese el SKU del producto" />
+                    <x-jet-input-error for="product.sku" />
+                </div>
+                {{-- model --}}
+                <div class="mb-4">
+                    <x-jet-label value="Modelo" />
+                    <x-jet-input type="text" class="w-full" wire:model="product.modelo"
+                        placeholder="Ingrese el modelo del producto" />
+                    <x-jet-input-error for="product.modelo" />
+                </div>
+                
+            </div>
+
             {{-- Nombre --}}
             <div class="mb-4">
                 <x-jet-label value="Nombre" />

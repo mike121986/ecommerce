@@ -31,6 +31,9 @@ class EditProduct extends Component
         'product.brand_id' => 'required',
         'product.price' => 'required',
         'product.quantity' => 'numeric',
+        'product.codigo' => 'required',
+        'product.sku' => 'required',
+        'product.modelo' => 'required'
     ];
 
     protected $listeners = ['refreshProduct', 'delete'];

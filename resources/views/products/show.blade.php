@@ -36,7 +36,7 @@
                        <a rel="noopener noreferrer" class="text-orange-500">{{ $product->codigo }}</a> </p>
                 </div>
 
-                <p class="text-2xl font-semibold text-trueGray-700 my-4">MXN ${{ $product->price }}</p>
+                <p class="text-2xl font-semibold text-trueGray-700 my-4"> ${{ $product->price }} MXN</p>
 
                 <div class="bg-white rounded-lg shadow-lg mb-6">
                     <div class="p-4 flex items-center">
