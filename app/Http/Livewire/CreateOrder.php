@@ -93,7 +93,7 @@ class CreateOrder extends Component
             $order->envio = json_encode([
                 'department' => Department::find($this->department_id)->name,
                 'city' => City::find($this->city_id)->name,
-                'district' => City::find($this->district_id)->name,
+                'district' => District::find($this->district_id)->name,
                 'address' => $this->address,
                 'references' => $this->references
             ]);
@@ -115,4 +115,3 @@ class CreateOrder extends Component
         return view('livewire.create-order');
     }
 }
-

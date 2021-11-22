@@ -29,7 +29,7 @@
             <label class="bg-white rounded-lg shadow px-6 py-4 flex items-center mb-4 cursor-pointer">
                 <input x-model="envio_type" type="radio" value="1" name="envio_type" class="text-gray-600">
                 <span class="ml-2 text-gray-700">
-                    Recojo en tienda (Calle Falsa 123)
+                    Recojo en tienda (Av. Tláhuac No. 1552 Col. Año de Juárez C.P. 09780 Del. Iztapalapa CDMX)
                 </span>
 
                 <span class="font-semibold text-gray-700 ml-auto">
@@ -50,11 +50,11 @@
 
                     {{-- Departamentos --}}
                     <div>
-                        <x-jet-label value="Departamento" />
+                        <x-jet-label value="Estado" />
 
                         <select class="form-control w-full" wire:model="department_id">
 
-                            <option value="" disabled selected>Seleccione un Departamento</option>
+                            <option value="" disabled selected>Seleccione un Estado</option>
 
                             @foreach ($departments as $department)
                                 <option value="{{$department->id}}">{{$department->name}}</option>
@@ -66,11 +66,11 @@
 
                     {{-- Ciudades --}}
                     <div>
-                        <x-jet-label value="Ciudad" />
+                        <x-jet-label value="Municipio" />
 
                         <select class="form-control w-full" wire:model="city_id">
 
-                            <option value="" disabled selected>Seleccione una ciudad</option>
+                            <option value="" disabled selected>Seleccione una Municipio</option>
 
                             @foreach ($cities as $city)
                                 <option value="{{$city->id}}">{{$city->name}}</option>
@@ -83,14 +83,14 @@
 
                     {{-- Distritos --}}
                     <div>
-                        <x-jet-label value="Distrito" />
+                        <x-jet-label value="Código psotal" />
 
                         <select class="form-control w-full" wire:model="district_id">
 
-                            <option value="" disabled selected>Seleccione un distrito</option>
+                            <option value="" disabled selected>Seleccione un Código psotal</option>
 
                             @foreach ($districts as $district)
-                                <option value="{{$district->id}}">{{$district->name}}</option>
+                                <option value="{{$district->id}}">{{$district->cp." -- ".$district->name}}</option>
                             @endforeach
                         </select>
 
